@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Tracker</title>
+    <link rel  = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class = "container">
+        <header>
+            <h1> Coin Tracker</h1>
+            <p>Track  cryptocurrency prices and market trends</p>
+        </header>
+
+        <section class = "controls">
+            <div class = "search-box"></div>
+            <input
+            type = "text" 
+            id = "searchInput" 
+            placeholder = "Search by coin name,ID or symbol..." 
+            >   
+            <button id = "searchBtn">Search</button>
+    </div>
+    <div class="sort-buttons">
+        <button id="marketCapBtn">Sort by Market Cap ↓</button>
+        <button id="changeBtn">Sort by Change % ↓</button>
+        <button id="asyncBtn">Reload (async/await)</button>
+      </div>
+    </section>
+
+    <p id="status" role="status">Loading cryptocurrency data...</p>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Coin</th>
+            <th>ID</th>
+            <th>Image</th>
+            <th>Symbol</th>
+            <th>Current Price ($)</th>
+            <th>Total Volume</th>
+            <th>Market Cap</th>
+            <th>Change (24h)</th>
+          </tr>
+        </thead>
+        <tbody id="coinTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+    
+
+    
+</body>
+</html>
